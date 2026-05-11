@@ -1,0 +1,12 @@
+{
+  "name": "xhs-night",
+  "version": "1.0.0",
+  "description": "XIAOHONGSHU NIGHT · Opening Party 邀請函 · 2026.05.29",
+  "private": true,
+  "scripts": {
+    "build": "bash build.sh"
+  },
+  "keywords": ["invitation", "xiaohongshu", "off-air", "event"],
+  "author": "OFF-AIR",
+  "license": "UNLICENSED"
+}
