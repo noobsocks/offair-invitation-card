@@ -259,6 +259,18 @@
     color: var(--paper);
     letter-spacing: .08em;
   }
+  /* 한국어 보조 카피 (작게, 흐리게) */
+  .p-invite-kr {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line-paper);
+    font-family: "Noto Serif KR", serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.9;
+    color: var(--paper-dim);
+    letter-spacing: .04em;
+  }
 
   /* ─── 디바이더 ─── */
   .p-divider {
@@ -537,7 +549,7 @@
   /* 지도 슬롯 */
   .map-slot {
     width: 100%;
-    aspect-ratio: 16/12;
+    aspect-ratio: 759/725;
     margin: 24px 0 32px;
     background: var(--bg-deep);
     border: 1px solid var(--line-paper);
@@ -556,7 +568,7 @@
   .map-slot img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     transition: transform .35s ease, filter .35s ease;
     filter: brightness(.92) saturate(.85);
@@ -1114,6 +1126,11 @@
       在这场由中韩创作者共同参与的特别交流之夜，<br/>
       期待您的莅临，<br/>
       与我们一同见证并点亮这意义非凡的时刻。
+      <div class="p-invite-kr">
+        샤오홍슈의 밤에 귀하를 초대합니다.<br/>
+        한·중 크리에이터들이 함께하는 특별한 교류의 자리에<br/>
+        참석하시어 빛내주시기를 바랍니다.
+      </div>
     </div>
 
     <!-- 디바이더 -->
@@ -1156,10 +1173,10 @@
     <h3 class="agenda-h">时间表</h3>
     <div class="agenda-h-en">TIME TABLE</div>
     <div>
-      <div class="ag-row"><div class="time">18:00<br/>19:00</div><div class="event">入场签到<span class="han">Entry &amp; Check-in</span></div></div>
-      <div class="ag-row featured"><div class="time">19:00<br/>19:30</div><div class="event">开场致辞 · 主旨演讲<span class="han">Welcome Speech · HQ Keynote (~30 min)</span></div></div>
-      <div class="ag-row featured"><div class="time">19:30<br/>21:50</div><div class="event">自由交流 · 各展位问答<span class="han">Networking · Booth Q&amp;A</span></div></div>
-      <div class="ag-row"><div class="time">21:50<br/>22:00</div><div class="event">闭幕<span class="han">Closing</span></div></div>
+      <div class="ag-row"><div class="time">18:00<br/>19:00</div><div class="event">入场签到<span class="han">입장 · 등록</span></div></div>
+      <div class="ag-row featured"><div class="time">19:00<br/>19:30</div><div class="event">开场致辞 · 主旨演讲<span class="han">환영사 · 본사 키노트</span></div></div>
+      <div class="ag-row featured"><div class="time">19:30<br/>21:50</div><div class="event">自由交流 · 各展位问答<span class="han">OFF-AIR&샤오홍슈 Q&A(부스) 및 네트워킹</span></div></div>
+      <div class="ag-row"><div class="time">21:50<br/>22:00</div><div class="event">闭幕<span class="han">폐회</span></div></div>
     </div>
   </section>
 
@@ -1273,7 +1290,7 @@
         <div class="form-group">
           <label class="lbl">
             <span>SNS URL</span>
-            <span class="han">Youtube · Instagram · TikTok · 小红书</span>
+            <span class="han">Instagram · 小红书</span>
           </label>
           <input type="text" name="sns" placeholder="https://" />
         </div>
@@ -1311,7 +1328,7 @@
           <div class="form-group">
             <label class="lbl">
               <span>SNS URL</span>
-              <span class="han">Youtube · Instagram · TikTok · 小红书</span>
+              <span class="han">Instagram · 小红书</span>
             </label>
             <input type="text" name="companionSns" placeholder="https://" />
           </div>
