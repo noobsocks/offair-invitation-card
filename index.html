@@ -1026,6 +1026,16 @@
     margin-top: 14px;
     text-align: center;
   }
+  /* 입력 필드 아래 작은 안내 문구 */
+  .field-hint {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 300;
+    font-size: 9px;
+    color: var(--paper-dim);
+    line-height: 1.5;
+    margin-top: 6px;
+    letter-spacing: .03em;
+  }
   .success-state { display: none; padding: 48px 28px; text-align: center; }
   .success-state.show { display: block; }
   .success-state .seal {
@@ -1174,8 +1184,8 @@
     <div class="agenda-h-en">TIME TABLE</div>
     <div>
       <div class="ag-row"><div class="time">18:00<br/>19:00</div><div class="event">入场签到<span class="han">입장 · 등록</span></div></div>
-      <div class="ag-row featured"><div class="time">19:00<br/>19:30</div><div class="event">开场致辞 · 主旨演讲<span class="han">환영사 · 본사 키노트</span></div></div>
-      <div class="ag-row featured"><div class="time">19:30<br/>21:50</div><div class="event">自由交流 · 各展位问答<span class="han">OFF-AIR&샤오홍슈 Q&A(부스) 및 네트워킹</span></div></div>
+      <div class="ag-row featured"><div class="time">19:00<br/>19:30</div><div class="event">开场致辞 · 主旨演讲<span class="han">환영사 · 본사 키노트 (30분)</span></div></div>
+      <div class="ag-row featured"><div class="time">19:30<br/>21:50</div><div class="event">自由交流 · 各展位问答<span class="han">자유 교류 · 부스별 Q&amp;A</span></div></div>
       <div class="ag-row"><div class="time">21:50<br/>22:00</div><div class="event">闭幕<span class="han">폐회</span></div></div>
     </div>
   </section>
@@ -1304,6 +1314,10 @@
           <div class="form-group">
             <label class="lbl"><span>邮箱 / EMAIL <span class="req">*</span></span></label>
             <input type="email" name="email" placeholder="you@email.com" required />
+            <p class="field-hint">
+              为接收活动通知邮件，请填写您的邮箱<br/>
+              행사 안내 메일 발송을 위해 이메일을 입력해주세요
+            </p>
           </div>
         </div>
 
