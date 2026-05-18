@@ -1176,7 +1176,7 @@
       <div class="info-item"><div class="lbl">TIME</div><div class="val">18:00 — 22:00</div><div class="han">入场 17:30</div></div>
       <div class="info-item"><div class="lbl">VENUE</div><div class="val">HAUS OF WOOMUL</div><div class="han">Seoul</div></div>
       <div class="info-item"><div class="lbl">DRESS</div><div class="val">BLACK · RED</div><div class="han">&nbsp;</div></div>
-      <div class="info-item"><div class="lbl">CREATORS</div><div class="val">150 CREATORS</div><div class="han">韓·中 CREATORS</div></div>
+      <div class="info-item"><div class="lbl">GUESTS</div><div class="val">150 GUESTS</div><div class="han">韓·中 GUESTS</div></div>
       <div class="info-item"><div class="lbl">COUNTRY</div><div class="val">KR · CN</div><div class="han">韓·中 网红</div></div>
     </div>
 
@@ -1228,8 +1228,7 @@
 
     <p class="d-body">
       A SINGLE NIGHT FOR ONLY YOU.<br/>
-      PRESS BUTTON TO JOIN.<br/>
-      이 행사는 1인과 함께 동행 가능한 행사입니다.
+      PRESS BUTTON TO JOIN.
     </p>
 
     <button class="join-btn" id="openModal">
@@ -1321,6 +1320,16 @@
               행사 안내 메일 발송을 위해 이메일을 입력해주세요
             </p>
           </div>
+        </div>
+
+        <!-- 推荐人 / REFERRER -->
+        <div class="form-group">
+          <label class="lbl"><span>推荐人 / REFERRER <span class="req">*</span></span></label>
+          <input type="text" name="referrer" placeholder="추천인 이름 / 推荐人姓名" required />
+          <p class="field-hint">
+            请填写邀请您参加本次活动的人员姓名<br/>
+            본 행사에 초대해주신 분의 이름을 입력해주세요
+          </p>
         </div>
 
         <!-- 同伴 / +1 -->
@@ -1459,6 +1468,7 @@
       sns: formData.sns || null,
       phone: formData.phone,
       email: formData.email,
+      referrer: formData.referrer,
       plus_one: formData.plusOne,
       companion_name: formData.companionName || null,
       companion_sns: formData.companionSns || null,
